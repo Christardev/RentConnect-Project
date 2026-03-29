@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Real estate rental platform for Bujumbura, Burundi",
-  "homepage": "https://{Christardev}.github.io/rentconnect-burundi",
+  "homepage": "https://Christardev.github.io/RentConnect-Project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
