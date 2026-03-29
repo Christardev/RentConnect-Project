@@ -11,3 +11,215 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
+
+/* ============================================
+   RESPONSIVE MEDIA QUERIES
+   ============================================ */
+
+/* Mobile First - Base styles (320px - 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+  }
+
+  .property-card {
+    margin-bottom: 1rem;
+  }
+
+  .filter-section {
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    font-size: 0.875rem;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Large Mobile / Small Tablet (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem !important;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem;
+  }
+
+  .filter-section {
+    padding: 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .navbar {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Tablet (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem;
+  }
+
+  .filter-section {
+    padding: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .container-custom {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/* Laptop (1025px - 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero-title {
+    font-size: 3rem !important;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem;
+  }
+
+  .filter-section {
+    padding: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .container-custom {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop / Large Screen (1441px+) */
+@media screen and (min-width: 1441px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem !important;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2.5rem;
+  }
+
+  .filter-section {
+    padding: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .container-custom {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+}
+
+/* Landscape Orientation for Mobile/Tablet */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .hero-section {
+    padding: 2rem 0 !important;
+  }
+
+  .navbar {
+    height: 3.5rem !important;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .property-card {
+    transition: transform 0.2s ease;
+  }
+
+  .property-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High DPI Screens (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar, .footer, .filter-section {
+    display: none !important;
+  }
+
+  .property-card {
+    page-break-inside: avoid;
+  }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  /* Add dark mode styles if needed in future */
+}
+
