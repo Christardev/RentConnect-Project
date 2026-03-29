@@ -10,7 +10,9 @@ A web-based real estate rental platform connecting landlords and renters in Buju
 
 ## 🌟 Live Demo
 
-[View Live Demo](https://your-username.github.io/rentconnect-burundi) (Coming Soon)
+[View Live Demo](https://your-username.github.io/rentconnect-burundi)
+
+> **Quick Deploy:** See [QUICK_START.md](QUICK_START.md) for 3-step deployment to GitHub Pages!
 
 ## Features
 
@@ -196,7 +198,26 @@ rentconnect-burundi/
 
 ## 🌍 Deployment
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions including:
+### GitHub Pages (Frontend Only)
+
+Quick deployment to GitHub Pages:
+
+```bash
+# Install gh-pages
+npm install gh-pages --save-dev
+
+# Update package.json homepage with your username
+# "homepage": "https://your-username.github.io/rentconnect-burundi"
+
+# Deploy
+npm run deploy
+```
+
+See [GITHUB_DEPLOYMENT.md](GITHUB_DEPLOYMENT.md) for detailed GitHub Pages instructions.
+
+### Full Stack Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for production deployment including:
 - MySQL Master-Slave replication setup
 - Production server configuration
 - SSL certificate installation

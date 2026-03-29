@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RentConnect Burundi</title>
+  <title>RentConnect Burundi - Find Your Perfect Home in Bujumbura</title>
+  <meta name="description" content="Real estate rental platform connecting landlords and renters in Bujumbura, Burundi">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script>
+    // Handle GitHub Pages client-side routing
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 </head>
 <body>
   <div id="root"></div>
